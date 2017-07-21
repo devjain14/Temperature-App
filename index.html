@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--    <script src="./temp.js"></script>-->
+    <script src="./temp.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Temperture App</h2>
+        <form>
+            <div class="form-group">
+                <label>Latitude:</label>
+                <input id="lat" class="form-control" placeholder="Enter Latitude">
+            </div>
+            <div class="form-group">
+                <label>Longitude:</label>
+                <input id="long" class="form-control" placeholder="Enter Longiutde">
+            </div>
+            <button type="button" onClick="loadDemo()" class="btn btn-primary" id="submit">Submit</button>
+        </form><br>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default">Temperature</button>
+            <button type="button" id="temp" class="btn btn-default">Empty</button>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Select Unit
+      <span class="caret"></span>
+    </button>
+                <ul class="dropdown-menu">
+                    <li onClick="fahren()"><a href="#">degree F</a></li>
+                    <li value="submit" onClick="celcius()"><a href="#">degree C</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="ans"></div>
+    </div>
+</body>
+
+</html>
